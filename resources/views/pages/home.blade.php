@@ -103,17 +103,6 @@
             </div>
         </div>
     </section>
-    <!-- Callout-->
-    <section class="callout">
-        <div class="container px-4 px-lg-5 text-center">
-            <h2 class="mx-auto mb-5">
-                Érdekel <em>ennek</em> a portfólió oldalnak a kódja?
-            </h2>
-            <a target="_blank" class="btn btn-primary btn-xl" href="https://github.com/dmi90/dt-skvad-portfolio.git">
-                Megnézem!
-            </a>
-        </div>
-    </section>
     <!-- Portfolio-->
     <section class="content-section" id="portfolio">
         <div class="container px-4 px-lg-5">
@@ -169,6 +158,17 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- Callout-->
+    <section class="callout">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="mx-auto mb-5">
+                Érdekel <em>ennek</em> a portfólió oldalnak a kódja?
+            </h2>
+            <a target="_blank" class="btn btn-primary btn-xl" href="https://github.com/dmi90/dt-skvad-portfolio.git">
+                Megnézem!
+            </a>
         </div>
     </section>
     <!-- Call to Action-->
