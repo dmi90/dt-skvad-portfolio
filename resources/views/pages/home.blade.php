@@ -54,7 +54,7 @@
         <div class="container px-4 px-lg-5">
             <div class="content-section-heading">
                 <h2 class="mt-0">Kompetenciáim</h2>
-                <h3 class="text-secondary mb-5">Az elmúlt 2-3 évet figyelembe véve</h3>
+                <h3 class="text-secondary mb-5">Az elmúlt 3-4 évet figyelembe véve</h3>
             </div>
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -107,22 +107,24 @@
     <section class="content-section" id="portfolio">
         <div class="container px-4 px-lg-5">
             <div class="content-section-heading text-center">
-                <h2 class="mb-0">Fejlesztett projektjeim</h2>
-                <h3 class="text-secondary mt-3 mb-5">Az elmúlt 2-3 évet figyelembe véve</h3>
+                <h2 class="mb-0">Néhány fejlesztett projektem</h2>
+                <h3 class="text-secondary mt-3 mb-5">Az elmúlt 3-4 évet figyelembe véve</h3>
             </div>
             <div class="row gx-0">
+                @foreach ($projects as $project)
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="#!">
+                    <a class="portfolio-item" href="{{ route('project', ['seo_name' => $project->seo_name]) }}">
                         <div class="caption">
                             <div class="caption-content">
-                                <div class="h2">Stationary</div>
-                                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                                <div class="h2">{{ $project->title }} ● {{ $project->year }}</div>
+                                <p class="mb-0">{{ $project->short_description }}</p>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..."/>
+                        <img class="img-fluid" src="{{ asset('storage/' . $project->cover) }}" alt="{{ $project->short_description }}"/>
                     </a>
                 </div>
-                <div class="col-lg-6">
+                @endforeach
+                <!--<div class="col-lg-6">
                     <a class="portfolio-item" href="#!">
                         <div class="caption">
                             <div class="caption-content">
@@ -156,7 +158,7 @@
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..."/>
                     </a>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>

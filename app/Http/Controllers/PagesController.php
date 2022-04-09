@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Project;
 
 class PagesController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        return view('pages.home', [
+            'projects' => Project::orderBy('sequence')->get()
+        ]);
     }
 }
