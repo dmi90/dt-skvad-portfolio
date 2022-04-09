@@ -11919,6 +11919,8 @@ html {
 .content-section {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
+    z-index: 2;
+    position: relative;
 }
 
 .content-section-heading h2, .content-section-heading .h2 {
@@ -12225,6 +12227,7 @@ footer.footer .social-link:hover {
 ul.about-info {
     text-align: left;
     font-size: 1.3rem;
+    padding-left: 0;
 }
 
 ul.about-info li span:first-child {
@@ -12235,4 +12238,23 @@ ul.about-info li span:first-child {
 
 #about p {
     font-size: 1.2rem;
+}
+
+.project-cover {
+    min-height: 300px;
+    position: absolute;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    z-index: 1;
+}
+
+.project-cover img {
+    width: 100%;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.project-content {
+    z-index: 2;
+    position: relative;
 }

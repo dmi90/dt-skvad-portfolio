@@ -14,12 +14,12 @@ class ProjectsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('projects')->delete();
-        
+
         \DB::table('projects')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'title' => 'BMC - Budapest Music Center Site',
@@ -32,7 +32,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:24:06',
                 'updated_at' => '2022-04-09 16:35:48',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'title' => 'BMC Records - Lemezkiadó',
@@ -45,7 +45,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:26:07',
                 'updated_at' => '2022-04-09 16:36:10',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'title' => 'reviCOLLECT',
@@ -58,7 +58,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:26:38',
                 'updated_at' => '2022-04-09 16:36:15',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'title' => 'Medicontur oldalcsoport',
@@ -71,7 +71,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:28:23',
                 'updated_at' => '2022-04-09 16:36:24',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'title' => 'MOL Oldalcsoport',
@@ -84,7 +84,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:29:10',
                 'updated_at' => '2022-04-09 16:36:33',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'title' => 'Hol vagy Kajla?',
@@ -97,10 +97,10 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:30:36',
                 'updated_at' => '2022-04-09 16:36:39',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
-                'title' => 'Sofa Media',
+                'title' => 'SOFA Media',
             'short_description' => 'WordPress alapú tartalmi leíró oldal a rendszer kiegészítésével ügyfél igények alapján (pl. extra block builder funkciók, form kezelés háttérfolyamatok).',
                 'long_description' => NULL,
                 'seo_name' => 'sofa-media',
@@ -110,7 +110,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:31:35',
                 'updated_at' => '2022-04-09 16:36:46',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'title' => 'GreenLight - Greenroom CMS',
@@ -123,7 +123,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:32:45',
                 'updated_at' => '2022-04-09 16:36:55',
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'title' => 'GreenDusk - Böngésző alapú tesztrendszer & monitoring',
@@ -136,7 +136,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:34:04',
                 'updated_at' => '2022-04-09 16:37:00',
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 10,
                 'title' => 'Hol vagy Kajla? - Játék portál',
@@ -149,7 +149,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:35:27',
                 'updated_at' => '2022-04-09 16:37:08',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 11,
                 'title' => 'Kürt Akadémia - WordPress website',
@@ -162,7 +162,7 @@ class ProjectsTableSeeder extends Seeder
                 'created_at' => '2022-04-09 15:37:24',
                 'updated_at' => '2022-04-09 16:37:14',
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 12,
                 'title' => 'OJV - Országos Jótékonysági Vadászat',
@@ -176,7 +176,7 @@ class ProjectsTableSeeder extends Seeder
                 'updated_at' => '2022-04-09 16:37:21',
             ),
         ));
-        
-        
+
+
     }
 }

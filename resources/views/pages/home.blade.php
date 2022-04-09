@@ -1,17 +1,9 @@
 @extends('main')
 
 @section('content')
-    <!-- Navigation-->
-    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand"><a href="#page-top">Menü</a></li>
-            <li class="sidebar-nav-item"><a href="#page-top">Vissza az elejére</a></li>
-            <li class="sidebar-nav-item"><a href="#about">Rólam</a></li>
-            <li class="sidebar-nav-item"><a href="#services">Kompetenciáim</a></li>
-            <li class="sidebar-nav-item"><a href="#portfolio">Portfólió</a></li>
-        </ul>
-    </nav>
+
+    @include('partials.nav')
+
     <!-- Header-->
     <header class="masthead d-flex align-items-center">
         <div class="container px-4 px-lg-5 text-center">
@@ -29,7 +21,7 @@
                 </div>
                 <div class="col-lg-8">
                     <h2 class="mb-5">Rólam</h2>
-                    <ul class="about-info gx-md-0 gx-4">
+                    <ul class="about-info">
                         <li class="d-flex"><span>Név:</span> <span>Drab Tamás</span></li>
                         <li class="d-flex"><span>Születési dátum:</span> <span>1990. december 14.</span></li>
                         <li class="d-flex"><span>Város:</span> <span>Budapest</span></li>
@@ -112,53 +104,8 @@
             </div>
             <div class="row gx-0">
                 @foreach ($projects as $project)
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="{{ route('project', ['seo_name' => $project->seo_name]) }}">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">{{ $project->title }} ● {{ $project->year }}</div>
-                                <p class="mb-0">{{ $project->short_description }}</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="{{ asset('storage/' . $project->cover) }}" alt="{{ $project->short_description }}"/>
-                    </a>
-                </div>
+                    @include('partials.project-box')
                 @endforeach
-                <!--<div class="col-lg-6">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">Ice Cream</div>
-                                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice
-                                    cream cone!</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..."/>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">Strawberries</div>
-                                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on
-                                    top!</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..."/>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">Workspace</div>
-                                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..."/>
-                    </a>
-                </div>-->
             </div>
         </div>
     </section>
