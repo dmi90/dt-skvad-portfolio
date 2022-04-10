@@ -36,7 +36,7 @@
                         Szeretek kirándulni, sportolni (2006 óta a magyar floorball OB1 játékosa), az időm kreatívan,
                         mindig valami újat alkotva tölteni.
                     </p>
-                    <a class="btn btn-dark btn-xl mt-5" href="#services">Kompetenciáim</a>
+                    <a target="_blank" class="btn btn-dark btn-xl mt-5" href="{{ asset('assets/pdf/cv-tamas-drab-2022.pdf') }}">Önéletrajz, szakmai kompetenciák</a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
             </div>
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-desktop"></i></span>
                     <h4><strong>Backend</strong></h4>
                     <p class="text-faded">
                         Az elmúlt években dedikált PHP fejlesztőként dolgoztam a legtöbbet, lehetőség szerint a Laravel
@@ -62,7 +62,7 @@
                     </p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-magic-wand"></i></span>
                     <h4><strong>Frontend</strong></h4>
                     <p class="text-faded mb-0">
                         2017-ig full stack fejlesztőként dolgoztam, így nem illetődöm meg jól rendszerezett projektek
@@ -73,7 +73,7 @@
                     </p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-share"></i></span>
                     <h4><strong>DevOps</strong></h4>
                     <p class="text-faded mb-0">
                         Alapszinten. Nem okoz gondot egy VPS telepítése (leginkább Linux disztribúciók), elbánok egy
@@ -82,7 +82,7 @@
                     </p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
                     <h4><strong>Grafika</strong></h4>
                     <p class="text-faded">
                         Nem esem kétségbe Adobe termékek használatakor, bár tény, hogy teljes arculattervezésre lennének

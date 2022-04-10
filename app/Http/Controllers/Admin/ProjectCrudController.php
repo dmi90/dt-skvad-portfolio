@@ -67,9 +67,9 @@ class ProjectCrudController extends CrudController
 
         $this->crud->field('title');
         $this->crud->field('short_description');
-        $this->crud->field('long_description');
+        $this->crud->field('long_description')->type('summernote');
         $this->crud->field('seo_name');
-        $this->crud->field('cover')->type('upload')->upload(true)->disk('public')->label('Kép');
+        $this->crud->field('cover')->type('upload')->upload(true)->disk('public');
         $this->crud->field('year');
         $this->crud->field('sequence');
     }

@@ -5,7 +5,7 @@
         <img src="{{ asset('storage/' . $project->cover) }}">
     </div>
 
-    <a class="menu-toggle rounded" href="/"><i class="fas fa-arrow-left"></i></a>
+    <a class="menu-toggle rounded" href="/#portfolio"><i class="fas fa-arrow-left"></i></a>
 
     <section class="content-section bg-primary text-white">
         <div class="container px-4 px-lg-5 text-center">
@@ -14,10 +14,10 @@
         </div>
     </section>
     <section class="content" id="about">
-        <div class="container px-4 px-lg-5 text-center">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-12 project-content mt-4">
-                    {{ $project->long_description }}
+                    {!! $project->long_description !!}
                 </div>
             </div>
         </div>
