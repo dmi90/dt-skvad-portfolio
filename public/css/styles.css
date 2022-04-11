@@ -11924,7 +11924,7 @@ html {
 }
 
 .content-section-heading h2, .content-section-heading .h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 
 .content-section-heading h3, .content-section-heading .h3 {
@@ -12211,6 +12211,22 @@ footer.footer .social-link:hover {
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem);
     }
+
+    .portfolio-item .caption .caption-content p {
+        display: inline-block !important;
+    }
+
+    ul.about-info {
+        font-size: 1.3rem !important;
+    }
+
+    ul.about-info li span:first-child {
+        width: 200px !important;
+    }
+
+    #about img {
+        margin-top: 120px;
+    }
 }
 
 .service-icon {
@@ -12226,18 +12242,24 @@ footer.footer .social-link:hover {
 
 ul.about-info {
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-left: 0;
+    white-space: nowrap;
 }
 
 ul.about-info li span:first-child {
+    width: auto;
     font-weight: 600;
     color: #000000;
-    width: 200px;
 }
 
 #about p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+#about img {
+    border-radius: 50%;
+    max-width: 100%;
 }
 
 .project-cover {
@@ -12258,4 +12280,8 @@ ul.about-info li span:first-child {
     z-index: 2;
     position: relative;
     font-size: 1.2rem;
+}
+
+.portfolio-item .caption .caption-content p {
+    display: none;
 }

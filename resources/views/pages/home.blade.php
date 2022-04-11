@@ -17,19 +17,19 @@
         <div class="container px-4 px-lg-5 text-center">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-4">
-                    <img style="max-width: 100%" src="https://icon-library.com/images/blank-person-icon/blank-person-icon-13.jpg">
+                    <img src="{{ asset('assets/img/cv_v1.jpg') }}">
                 </div>
                 <div class="col-lg-8">
-                    <h2 class="mb-5">Rólam</h2>
+                    <h2 class="mt-5 mb-5">Rólam</h2>
                     <ul class="about-info">
-                        <li class="d-flex"><span>Név:</span> <span>Drab Tamás</span></li>
-                        <li class="d-flex"><span>Születési dátum:</span> <span>1990. december 14.</span></li>
-                        <li class="d-flex"><span>Város:</span> <span>Budapest</span></li>
-                        <li class="d-flex"><span>Email:</span> <span>tamas.drab@gmail.com</span></li>
-                        <li class="d-flex"><span>Telefonszám: </span> <span>+36 30 459 6139</span></li>
+                        <li class="d-flex"><span>Név:</span>&nbsp;<span>Drab Tamás</span></li>
+                        <li class="d-flex"><span>Születési dátum:</span>&nbsp;<span>1990. december 14.</span></li>
+                        <li class="d-flex"><span>Város:</span>&nbsp;<span>Budapest</span></li>
+                        <li class="d-flex"><span>Email:</span>&nbsp;<span><a href="mailto:tamas.drab@gmail.com">tamas.drab@gmail.com</a></span></li>
+                        <li class="d-flex"><span>Telefonszám:</span>&nbsp;<span><a href="tel:+36304596139">+36 30 459 6139</a></span></li>
                     </ul>
                     <p class="text-start mt-4">
-                        2008 óta foglalkozom PHP és az ezt kiegészítő frontend fejlesztésekkel, előtte grafikai irányban
+                        2009 óta foglalkozom PHP és az ezt kiegészítő frontend fejlesztésekkel, előtte grafikai irányban
                         képeztem magam.
                     </p>
                     <p class="text-start">
@@ -124,9 +124,9 @@
     <section class="content-section bg-primary text-white">
         <div class="container px-4 px-lg-5 text-center">
             <h2 class="mb-4">Így készült...</h2>
-            <a target="_blank" class="btn btn-xl btn-light me-1" href="https://startbootstrap.com/theme/stylish-portfolio">Stylish Portfolio Template</a>
-            <a target="_blank" class="btn btn-xl btn-dark me-1" href="https://laravel.com/">Laravel</a>
-            <a target="_blank" class="btn btn-xl btn-light me-1" href="https://backpackforlaravel.com/">Laravel Backpack</a>
+            <a target="_blank" class="btn btn-xl btn-light me-1 mt-1" href="https://startbootstrap.com/theme/stylish-portfolio">Stylish Portfolio Template</a>
+            <a target="_blank" class="btn btn-xl btn-dark me-1 mt-1" href="https://laravel.com/">Laravel</a>
+            <a target="_blank" class="btn btn-xl btn-light me-1 mt-1" href="https://backpackforlaravel.com/">Laravel Backpack</a>
         </div>
     </section>
     <!-- Footer-->
